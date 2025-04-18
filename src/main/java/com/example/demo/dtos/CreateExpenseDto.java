@@ -13,6 +13,7 @@ public class CreateExpenseDto {
     @NotNull(message = "Kategori alanı boş olamaz!")
     private String category;
     @NotNull(message = "Tutar alanı boş olamaz!")
+    @Min(0)
     private Integer amount;
     @NotNull(message = "Tarih alanı boş girilemez!")
     private LocalDate date;
