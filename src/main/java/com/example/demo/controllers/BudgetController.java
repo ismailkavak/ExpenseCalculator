@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/budget")
 @RequiredArgsConstructor
-@CrossOrigin
+@CrossOrigin(origins = "https://ismailk.top")
 public class BudgetController {
     private final BudgetService budgetService;
 
