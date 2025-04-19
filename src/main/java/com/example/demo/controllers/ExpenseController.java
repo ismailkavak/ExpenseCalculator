@@ -21,7 +21,7 @@ public class ExpenseController {
 
     @PostMapping
     public ExpenseResponseDto addExpense(@RequestBody @Valid CreateExpenseDto expense){
-//        return expenseService.saveExpense(expense);
+        return expenseService.saveExpense(expense);
     }
 
     @GetMapping("/all")
