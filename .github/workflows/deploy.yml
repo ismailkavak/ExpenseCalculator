@@ -53,6 +53,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /root/ExpenseCalculator
+            git pull
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/expense-calculator-backend:latest
             docker compose down || true
             docker compose up -d --remove-orphans
