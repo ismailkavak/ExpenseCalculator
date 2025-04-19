@@ -21,6 +21,7 @@ public class ExpenseController {
 
     @PostMapping
     public ExpenseResponseDto addExpense(@RequestBody @Valid CreateExpenseDto expense){
+        System.out.println("CALISTI");
         return expenseService.saveExpense(expense);
     }
 
